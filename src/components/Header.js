@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="container header">
       <h3>
-        Cocktail Search App
+        Cocktail Search App <br />
         <small>Search and get details of Your favourite Cocktails</small>
       </h3>
       <form>

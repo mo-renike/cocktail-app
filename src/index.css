@@ -5,16 +5,43 @@
 }
 
 :root {
-  --primary-color: #6d6d6d;
-  --sec-color: #efefef;
+  --primary-color: #1c1c1c;
+  --sec-color: #101010;
   --button-color: #300000;
+  --text-color: #f0e5e5;
 }
 
 body {
   font-size: 18px;
+  color: var(--text-color);
   background-color: var(--primary-color);
 }
 
-header {
-  box-shadow: 1px 2px 2px var(--sec-color), -1px -2px 2px var(--sec-color);
+.header {
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
+}
+
+.header form input {
+  margin: 1rem auto;
+  padding: 1rem 3rem;
+  border: 3px solid var(--sec-color);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.header form input:focus {
+  outline: none;
+}
+h1,
+h2,
+h3 {
+  margin: 1rem auto;
+}
+
+.main {
+  padding: 10x;
+  text-align: center;
 }

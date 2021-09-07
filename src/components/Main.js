@@ -1,13 +1,12 @@
 import React from "react";
+import Cocktail from "./Cocktail";
 
 const Main = () => {
   return (
     <div className="containerFluid main">
-      <h3>Cocktails</h3>
+      <h2>Cocktails</h2>
       <div className="cocktails">
-          <div className="cocktail">
-              <Cocktail />
-          </div>
+        <Cocktail />
       </div>
     </div>
   );
