@@ -41,7 +41,42 @@ h3 {
   margin: 1rem auto;
 }
 
-.main {
-  padding: 10x;
+.cocktails {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.cocktail {
+  padding: 30px;
+  margin: 2rem 1rem;
+  width: 350px;
+  background-color: #1c1c1c;
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
+  flex-direction: column;
+  box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
+}
+
+.cocktail:hover {
+  transform: scale(1.045);
+  transition: 0.4s ease;
+}
+.cocktail img {
+  width: 100%;
+}
+
+.cocktail a {
+  margin: auto;
+  width: 60%;
+  padding: 0.8rem;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
 }

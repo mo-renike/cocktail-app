@@ -1,12 +1,11 @@
-
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Cocktails from "./components/Cocktails";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Cocktails />
     </div>
   );
 }

@@ -1,23 +1,15 @@
 import React from "react";
+import Details from "./Details";
 
-const Cocktail = () => {
-  const getCocktail = async () => {
-    const api = "https://cocktails1.p.rapidapi.com/search.php?s=margarita";
-    const config = {
-      method: "GET",
-      headers: {
-        "x-rapidapi-host": "cocktails1.p.rapidapi.com",
-        "x-rapidapi-key": "b5955c940amsh9ba067ff07dbc5ap17f2abjsn2acd75e2d6af",
-      },
-    };
-
-    const resp = await fetch(api, config);
-    const data = await resp.json();
-    console.log(data.drinks);
-  };
-  getCocktail();
-
-  return <div></div>;
+const Cocktail = ({ img, drink, alcohol }) => {
+  return (
+    <div className="cocktail">
+      <img src={img} alt="cocktail" />
+      <h2>{drink}</h2>
+      <p>{alcohol}</p>
+      <a href={<Details />}>View Details</a>
+    </div>
+  );
 };
 
 export default Cocktail;
