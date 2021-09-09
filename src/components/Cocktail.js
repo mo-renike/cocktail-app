@@ -1,13 +1,16 @@
 import React from "react";
-import Details from "./Details";
+import { Link } from "react-router-dom";
 
-const Cocktail = ({ img, drink, alcohol }) => {
+const Cocktail = ({ img, drink, alcohol, glass }) => {
   return (
     <div className="cocktail">
       <img src={img} alt="cocktail" />
-      <h2>{drink}</h2>
-      <p>{alcohol}</p>
-      <a href={<Details />}>View Details</a>
+      <div className="cocktail-details">
+        <h3>{drink}</h3>
+        <small>{alcohol}</small>
+        <small>{glass} Drink</small>
+        <Link to="/details">View Details</Link>
+      </div>
     </div>
   );
 };

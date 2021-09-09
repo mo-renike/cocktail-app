@@ -7,7 +7,6 @@
 :root {
   --primary-color: #1c1c1c;
   --sec-color: #101010;
-  --button-color: #300000;
   --text-color: #f0e5e5;
 }
 
@@ -49,16 +48,9 @@ h3 {
 }
 
 .cocktail {
-  padding: 30px;
   margin: 2rem 1rem;
   width: 350px;
-  background-color: #1c1c1c;
-  height: 450px;
   border-radius: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  flex-direction: column;
   box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
 }
 
@@ -70,13 +62,45 @@ h3 {
   width: 100%;
 }
 
-.cocktail a {
-  margin: auto;
-  width: 60%;
-  padding: 0.8rem;
-  background-color: var(--button-color);
+.cocktail-details {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.cocktail-details small {
+  font-size: 1rem;
+  color: #dfdfdf;
+}
+.cocktail-details a {
+  font-weight: bold;
+  padding: 1.1rem;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: var(--primary-color);
   color: var(--text-color);
   text-decoration: none;
   border-radius: 20px;
   box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
+}
+
+.details-wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+.details {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-info {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+}
+.details-info li {
+  list-style-type: none;
 }

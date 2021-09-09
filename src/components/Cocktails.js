@@ -43,17 +43,17 @@ const Cocktails = () => {
         <Cocktail
           alcohol={cocktail.strAlcoholic}
           key={cocktail.idDrink}
+          glass={cocktail.strGlass}
           drink={cocktail.strDrink}
           img={cocktail.strDrinkThumb}
-          ingredients={
-            (cocktail.strIngrdient1,
-            cocktail.strIngrdient2,
-            cocktail.strIngrdient3,
-            cocktail.strIngrdient4,
-            cocktail.strIngrdient5,
-            cocktail.strIngrdient6,
-            cocktail.strIngrdient7)
-          }
+          ingredient1={cocktail.strIngrdient1}
+          ingredient2={cocktail.strIngrdient2}
+          ingredient3={cocktail.strIngrdient3}
+          ingredient4={cocktail.strIngrdient4}
+          ingredient5={cocktail.strIngrdient5}
+          ingredient6={cocktail.strIngrdient6}
+          ingredient7={cocktail.strIngrdient7}
+          instructions={cocktail.strInstructions}
         />
       ))}
     </div>
