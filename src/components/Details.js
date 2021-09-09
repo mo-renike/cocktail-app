@@ -12,7 +12,9 @@ const Details = ({
   ingredient5,
   ingredient6,
   ingredient7,
+  instructions,
 }) => {
+  console.log(glass);
   return (
     <div className="details-wrapper">
       <h2>{drink}</h2>
@@ -31,6 +33,8 @@ const Details = ({
           <li>{ingredient6}</li>
           <li>{ingredient7}</li>
         </ul>
+        <h3>Instructions: </h3>
+        <div>{instructions}</div>
       </div>
     </div>
   );
