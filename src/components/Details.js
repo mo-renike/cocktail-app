@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Details = ({
   img,
@@ -15,11 +15,9 @@ const Details = ({
   ingredient7,
   instructions,
 }) => {
-  const { details } = useParams();
-
   return (
     <div className="details-wrapper">
-      <h2>{details}</h2>
+      <h2>{drink}</h2>
       <div className="details"></div>
       <img src={img} alt="cocktail" />
       <div className="details-info">

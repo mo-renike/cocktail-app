@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={Cocktails}></Route>
-          <Route path="/details" component={Details}></Route>
+          <Route path="/details/" component={Details}></Route>
           <Route component={NotFound}></Route>
         </Switch>
       </div>

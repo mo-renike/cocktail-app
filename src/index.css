@@ -54,10 +54,10 @@ h3 {
   box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
 }
 
-.cocktail:hover {
+/* .cocktail:hover {
   transform: scale(1.045);
   transition: 0.4s ease;
-}
+} */
 .cocktail img {
   width: 100%;
 }

@@ -9,7 +9,7 @@ const Cocktail = ({ img, drink, alcohol, glass, key }) => {
         <h3>{drink}</h3>
         <small>{alcohol}</small>
         <small>{glass} Drink</small>
-        <Link to="/details">View Details</Link>
+        <Link to="/details/">View Details</Link>
       </div>
     </div>
   );
