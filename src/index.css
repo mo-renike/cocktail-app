@@ -71,7 +71,7 @@ h3 {
   font-size: 1rem;
   color: #dfdfdf;
 }
-.cocktail-details a {
+a {
   font-weight: bold;
   padding: 1.1rem;
   margin: 1rem auto;
@@ -82,7 +82,10 @@ h3 {
   border-radius: 20px;
   box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
 }
-
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
 .details-wrapper {
   padding: 30px;
   text-align: center;

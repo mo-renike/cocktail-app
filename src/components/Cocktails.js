@@ -1,6 +1,7 @@
 import React from "react";
 import Cocktail from "./Cocktail";
 import { useState, useEffect } from "react";
+import { Link   } from "react-router-dom";
 
 const Cocktails = () => {
   const [cocktails, setCocktails] = useState([]);

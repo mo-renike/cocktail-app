@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Cocktail = ({ img, drink, alcohol, glass }) => {
+const Cocktail = ({ img, drink, alcohol, glass, key }) => {
   return (
     <div className="cocktail">
       <img src={img} alt="cocktail" />
