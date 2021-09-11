@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ getSearch, search, updateSearch }) => {
+const Header = (props) => {
   return (
     <div className="container header">
       <h3>
@@ -8,8 +8,8 @@ const Header = ({ getSearch, search, updateSearch }) => {
         <br /> <br />
         <small>Hit me with your best shot 🍸 😉</small>
       </h3>
-      <form onnSubmit={getSearch}>
-        <input type="search" placeholder="Search..." value={search} />
+      <form onSubmit={props.getCocktail}>
+        <input type="search" placeholder="Search..." name="cocktailName" />
       </form>
     </div>
   );
