@@ -9,7 +9,11 @@ const Header = (props) => {
         <small>Hit me with your best shot 🍸 😉</small>
       </h3>
       <form onSubmit={props.getCocktail}>
-        <input type="search" placeholder="Search..." name="cocktailName" />
+        <input
+          type="search"
+          placeholder="Start typing..."
+          name="cocktailName"
+        />
       </form>
     </div>
   );

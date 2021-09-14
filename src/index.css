@@ -7,13 +7,14 @@
 :root {
   --primary-color: #1c1c1c;
   --sec-color: #101010;
-  --text-color: #f0e5e5;
+  --text-color: #e4d2d2;
 }
 
 body {
   font-size: 18px;
   color: var(--text-color);
   background-color: var(--primary-color);
+  letter-spacing: 1px;
 }
 
 .header {
@@ -40,7 +41,7 @@ h3 {
   margin: 1rem auto;
 }
 
-.cocktails {
+.cocktails-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -69,22 +70,22 @@ h3 {
 }
 .cocktail-details small {
   font-size: 1rem;
-  color: #dfdfdf;
+  color: #bf6666;
 }
 a {
   font-weight: bold;
-  padding: 1.1rem;
+  padding: 0.6rem 1.1rem;
   margin: 1rem auto;
   text-align: center;
   background-color: var(--primary-color);
   color: var(--text-color);
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
 }
 a:hover {
   text-decoration: underline;
-  color: red;
+  color: #bf6666;
 }
 .details-wrapper {
   padding: 30px;
@@ -94,7 +95,7 @@ a:hover {
 .details {
   padding: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .details-info {
@@ -102,6 +103,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
+  align-items: flex-start;
   justify-content: space-evenly;
 }
 .details-info li {

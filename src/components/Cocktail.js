@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Cocktail = ({ img, drink, alcohol, glass, key }) => {
+const Cocktail = (props) => {
   return (
     <div className="cocktail">
-      <img src={img} alt="cocktail" />
+      <img src={props.img} alt="cocktail" />
       <div className="cocktail-details">
-        <h3>{drink}</h3>
-        <small>{alcohol}</small>
-        <small>{glass} Drink</small>
+        <h3>{props.name}</h3>
+        <small>{props.alcohol}</small>
         <Link to="/details/">View Details</Link>
       </div>
     </div>

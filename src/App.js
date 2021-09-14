@@ -1,21 +1,15 @@
 import Header from "./components/Header";
-import Cocktails from "./components/Cocktails";
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Cocktail from "./components/Cocktail";
+import { useState } from "react";
 import Details from "./components/Details";
-import NotFound from "./components/NotFound";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
-  // const [cocktailName, setCockTailName] = useState("");
+  const [cocktailName, setCockTailName] = useState("");
 
   // useEffect(() => {
   //   getCocktail();
-  // }, []);
-
-  // state = {
-  //   cocktails = []
-  // }
+  // }, [cocktailName]);
 
   const getCocktail = async (e) => {
     const cocktailName = e.target.elements.cocktailName.value;
@@ -32,26 +26,39 @@ function App() {
 
     const resp = await fetch(api, config);
     const data = await resp.json();
-    setCocktails({ cocktails: data.cocktails });
-    console.log(cocktails);
-    console.log(cocktailName);
+    setCocktails(data.drinks);
   };
 
   return (
-    <Router basename="/cocktails">
-      <div className="App">
-        <Header getCocktail={getCocktail} />
-        <Switch>
-          <Route path="/" exact>
-            <Cocktails getCocktail={getCocktail} />
-          </Route>
-          <Route path="/details/">
-            <Details getCocktail={getCocktail} />
-          </Route>
-          <Route component={NotFound}></Route>
-        </Switch>
+    <div className="App">
+      <Header getCocktail={getCocktail} />
+
+      <div className="cocktails-wrapper">
+        {cocktails.map((cocktail) => (
+          <Cocktail
+            key={cocktail.strDrink}
+            alcohol={cocktail.strAlcoholic}
+            name={cocktail.strDrink}
+            glass={cocktail.strGlass}
+            img={cocktail.strDrinkThumb}
+          />
+        ))}
       </div>
-    </Router>
+      <Details
+        alcohol={cocktails.strAlcoholic}
+        name={cocktails.strDrink}
+        glass={cocktails.strGlass}
+        img={cocktails.strDrinkThumb}
+        how={cocktails.strInstructions}
+        ingr1={cocktails.strIngredient1}
+        ingr2={cocktails.strIngredient2}
+        ingr3={cocktails.strIngredient3}
+        ingr4={cocktails.strIngredient4}
+        ingr5={cocktails.strIngredient5}
+        ingr6={cocktails.strIngredient6}
+        ingr7={cocktails.strIngredient7}
+      />
+    </div>
   );
 }
 
