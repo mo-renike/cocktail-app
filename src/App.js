@@ -7,10 +7,6 @@ function App() {
   const [cocktails, setCocktails] = useState([]);
   const [cocktailName, setCockTailName] = useState("");
 
-  // useEffect(() => {
-  //   getCocktail();
-  // }, [cocktailName]);
-
   const getCocktail = async (e) => {
     const cocktailName = e.target.elements.cocktailName.value;
     e.preventDefault();

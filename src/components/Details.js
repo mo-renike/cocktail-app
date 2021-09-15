@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Details = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="details-wrapper">
       <h2>{props.name}</h2>
@@ -26,7 +26,7 @@ const Details = (props) => {
           <div>{props.strInstructions}</div>
         </div>
       </div>
-      <Link to="/">Back to Cocktails</Link>
+      <Link to="/">Back to cocktails</Link>
     </div>
   );
 };
