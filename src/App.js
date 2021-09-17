@@ -1,10 +1,15 @@
 import Header from "./components/Header";
 import Cocktails from "./components/Cocktails";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
+  // eslint-disable-next-line
   const [cocktailName, setCockTailName] = useState("");
+
+  // useEffect(() => {
+  //   getCocktail();
+  // }, [cocktails]);
 
   const getCocktail = async (e) => {
     const cocktailName = e.target.elements.cocktailName.value;

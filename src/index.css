@@ -39,8 +39,21 @@ h1,
 h2,
 h3 {
   margin: 1rem auto;
+  font-weight: bold;
 }
 
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.6rem;
+}
+h3 {
+  font-size: 1.9rem;
+}
+p {
+  font-weight: normal;
+}
 .cocktails-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -61,6 +74,7 @@ h3 {
 } */
 .cocktail img {
   width: 100%;
+  border-radius: inherit;
 }
 
 .cocktail-details {
@@ -95,17 +109,33 @@ a:hover {
 .details {
   padding: 30px;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
+.details-img {
+  width: 40%;
+}
+.details-img img {
+  width: 100%;
+}
 .details-info {
-  margin: 1rem auto;
-  display: flex;
-  flex-direction: column;
+  margin: 2rem auto;
+  display: block;
   text-align: left;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  width: 45%;
 }
 .details-info li {
   list-style-type: none;
+}
+@media (max-width: 720px) {
+  .details {
+    flex-direction: column;
+  }
+  .details-img,
+  .details-info {
+    width: 90%;
+  }
 }
