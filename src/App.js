@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Cocktails from "./components/Cocktails";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
