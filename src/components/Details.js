@@ -51,7 +51,7 @@ class Details extends Component {
             </div>
           </div>
         )}
-        <Link to="/">Back to cocktails</Link>
+        <Link to="/cocktail-app">Back to cocktails</Link>
       </div>
     );
   }

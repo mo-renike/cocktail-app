@@ -1,20 +1,16 @@
 import Header from "./components/Header";
 import Cocktails from "./components/Cocktails";
-import { useState} from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
-  // eslint-disable-next-line
   const [cocktailName, setCockTailName] = useState("");
 
-  // useEffect(() => {
-  //   getCocktail();
-  // }, [cocktails]);
+  useEffect(() => {
+    getCocktail();
+  }, []);
 
-  const getCocktail = async (e) => {
-    const cocktailName = e.target.elements.cocktailName.value;
-    e.preventDefault();
-
+  const getCocktail = async () => {
     const api = `https://cocktails1.p.rapidapi.com/search.php?s=${cocktailName}`;
     const config = {
       method: "GET",
@@ -29,9 +25,16 @@ function App() {
     setCocktails(data.drinks);
   };
 
+  const search = (e) => {
+    e.preventDefault();
+  };
+
+  const setSearch = (e) => {
+    setCockTailName(e.target.value);
+  };
   return (
     <div className="App">
-      <Header getCocktail={getCocktail} />
+      <Header search={search} setSearch={setSearch} />
       <Cocktails cocktails={cocktails} />
     </div>
   );

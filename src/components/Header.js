@@ -8,11 +8,12 @@ const Header = (props) => {
         <br /> <br />
         <small>Hit me with your best shot 🍸 😉</small>
       </h3>
-      <form onSubmit={props.getCocktail}>
+      <form onSubmit={props.search}>
         <input
           type="search"
           placeholder="Start typing..."
-          name="cocktailName"
+          value={props.cocktailName}
+          onChange={props.setSearch}
         />
       </form>
     </div>
