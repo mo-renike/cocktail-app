@@ -8,6 +8,7 @@ function App() {
 
   useEffect(() => {
     getCocktail();
+    // eslint-disable-next-line
   }, []);
 
   const getCocktail = async () => {
@@ -27,11 +28,13 @@ function App() {
 
   const search = (e) => {
     e.preventDefault();
+    getCocktail(e)
   };
 
   const setSearch = (e) => {
     setCockTailName(e.target.value);
   };
+
   return (
     <div className="App">
       <Header search={search} setSearch={setSearch} />
