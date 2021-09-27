@@ -92,15 +92,15 @@ a {
   padding: 0.6rem 1.1rem;
   margin: 1rem auto;
   text-align: center;
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--sec-color);
   text-decoration: none;
   border-radius: 12px;
-  box-shadow: 3px 2px 2px var(--sec-color), -3px -2px 2px var(--sec-color);
+  box-shadow: 1px 1px 1px var(--sec-color), -1px -1px 1px var(--sec-color);
 }
 a:hover {
   text-decoration: underline;
-  color: var(--third-color);
+  background-color: var(--third-color);
 }
 .details-wrapper {
   padding: 30px;
