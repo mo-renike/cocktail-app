@@ -9,7 +9,8 @@ const NotFound = () => {
   };
   return (
     <div className="cocktail-details">
-      <h1 style={style}>Oops...<br /> Sorry, I have searched tirelessly, <br/> but that Page cannot be Found <br/> (-_-)</h1>
+      <h3 style={style}>Oops...<br /> Sorry, I have searched tirelessly, 
+      <br/> but that Page cannot be Found <br/> (-_-)</h3>
       <Link to="/">Back to Homepage</Link>
     </div>
   );
