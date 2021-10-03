@@ -4,11 +4,11 @@ const Header = (props) => {
   console.log(props);
   return (
     <div className="container header">
-      <h3>
+      <h1>
         Cocktaily
         <br /> <br />
         <small>Hit me with your best shot 🍸 😉</small>
-      </h3>
+      </h1>
       <form onSubmit={props.search}>
         <input
           type="search"
