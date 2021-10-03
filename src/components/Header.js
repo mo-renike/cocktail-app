@@ -4,15 +4,13 @@ const Header = (props) => {
   console.log(props);
   return (
     <div className="container header">
-      <h1>
-        Cocktaily
-        <br /> <br />
-        <small>Hit me with your best shot 🍸 😉</small>
-      </h1>
+      <h1>Cocktaily </h1>
+      <p>Hit me with your best shot 🍸</p>
+
       <form onSubmit={props.search}>
         <input
           type="search"
-          placeholder="Start typing..."
+          placeholder="Search cocktail by name..."
           value={props.cocktailName}
           onChange={props.setSearch}
         />
