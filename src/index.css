@@ -140,4 +140,7 @@ a:hover {
   .details-info {
     width: 90%;
   }
+  .header form input{
+    width: 80%;
+  }
 }
