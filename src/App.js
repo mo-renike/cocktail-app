@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Cocktails from "./components/Cocktails";
 import { useState, useEffect } from "react";
+import Loader from "./components/Loader";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
@@ -8,7 +9,6 @@ function App() {
 
   useEffect(() => {
     getCocktail();
-    // eslint-disable-next-line
   }, []);
 
   const getCocktail = async () => {
@@ -38,6 +38,7 @@ function App() {
   return (
     <div className="App">
       <Header search={search} setSearch={setSearch} />
+      <Loader />
       <Cocktails cocktails={cocktails} />
     </div>
   );
