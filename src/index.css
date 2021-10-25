@@ -133,8 +133,8 @@ a:hover {
   list-style-type: none;
 }
 .loader{
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   margin: 40px auto;
   border-radius: 50%;
   background-color: #bcffc7;
