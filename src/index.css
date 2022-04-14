@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -18,7 +18,7 @@ body {
   color: var(--text-color);
   background-color: var(--primary-color);
   letter-spacing: 1px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -43,7 +43,7 @@ body {
 h1,
 h2,
 h3 {
-  margin: .8rem auto;
+  margin: 0.8rem auto;
   font-weight: 700;
 }
 
@@ -69,7 +69,13 @@ p {
   border-radius: 20px;
   box-shadow: 2px 2px 1px var(--sec-color), -2px -2px 1px var(--sec-color);
 }
-
+.cocktail-img{
+  display: inline-block;
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+  vertical-align: middle;
+}
 .cocktail img:hover {
   transform: scale(1.2);
   transition: 0.4s ease;
@@ -132,14 +138,13 @@ a:hover {
 .details-info li {
   list-style-type: none;
 }
-.loader{
+.loader {
   width: 20px;
   height: 20px;
   margin: 40px auto;
   border-radius: 50%;
   background-color: #bcffc7;
 }
-
 
 @media (max-width: 720px) {
   .details {
@@ -149,7 +154,7 @@ a:hover {
   .details-info {
     width: 90%;
   }
-  .header form input{
+  .header form input {
     width: 80%;
   }
 }

@@ -7,7 +7,10 @@ const Cocktails = (props) => {
       {props.cocktails.map((cocktail) => {
         return (
           <div className="cocktail" key={cocktail.idDrink}>
+            <div className="cocktail-img">      
             <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+            </div>
+      
             <div className="cocktail-details">
               <h3>
                 {cocktail.strDrink.length < 20

@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <Header search={search} setSearch={setSearch} />
-      <Loader />
+
       <Cocktails cocktails={cocktails} />
     </div>
   );
