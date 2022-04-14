@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Cocktails from "./components/Cocktails";
 import { useState, useEffect } from "react";
-import Loader from "./components/Loader";
+// import Loader from "./components/Loader";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
