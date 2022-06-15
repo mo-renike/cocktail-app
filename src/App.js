@@ -28,7 +28,7 @@ function App() {
 
   const search = (e) => {
     e.preventDefault();
-    getCocktail(e)
+    getCocktail(e);
   };
 
   const setSearch = (e) => {
