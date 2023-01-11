@@ -1,21 +1,24 @@
 import React from "react";
 
-const Header = (props) => {
-  console.log(props);
+const Header = ({ search, setSearch, cocktailName }) => {
+
+
+
   return (
-    <div className="container header">
-      <h1>Cocktaily </h1>
+    <div className="header" ><h1>Cocktaily </h1>
       <p>Hit me with your best shot 🍸</p>
 
-      <form onSubmit={props.search}>
+      <form onSubmit={search}>
         <input
           type="search"
           placeholder="Search cocktail by name..."
-          value={props.cocktailName}
-          onChange={props.setSearch}
+          value={cocktailName}
+          onChange={setSearch}
         />
       </form>
+
     </div>
+
   );
 };
 
